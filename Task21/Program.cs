@@ -14,4 +14,9 @@ void GetResult(string txt) {
 
 Console.WriteLine("Введите строку чисел ( числа отделяются друг от друга запятой ) : ");
 string text = Console.ReadLine();
+if(text == "") 
+{
+    Console.WriteLine("The input string '' was not in a correct format");
+    return;
+}
 GetResult(text);
